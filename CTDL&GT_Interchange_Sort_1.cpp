@@ -5,7 +5,7 @@ void sapXepDoiChoTrucTiep(int arr[], int n) {
     for (i = 0; i < n - 1; i++) {
         for (j = 0; j < n - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
-                // HoÃ¡n Ä‘á»•i giÃ¡ trá»‹ cá»§a hai pháº§n tá»­ náº¿u khÃ´ng Ä‘Ãºng thá»© tá»±
+                // Hoán đổi giá trị của hai phần tử nếu không đúng thứ tự
                 int temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
@@ -28,7 +28,7 @@ int main() {
         printf("%d ", arr[i]);
     }
 
-    sapXepDoiChoTrucTiep(arr, n); // Gá»i hÃ m sáº¯p xáº¿p Ä‘á»•i chá»— trá»±c tiáº¿p
+    sapXepDoiChoTrucTiep(arr, n); // Gọi hàm sắp xếp đổi chỗ trực tiếp
 
     printf("\nMang sau khi sap xep: ");
     for (int i = 0; i < n; i++) {

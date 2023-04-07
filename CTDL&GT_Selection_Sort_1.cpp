@@ -9,3 +9,5 @@ void selectionSort(int arr[], int n) {
       swap(arr[min_idx], arr[i]);
    }
 }
+cre: nhóm 4
+   

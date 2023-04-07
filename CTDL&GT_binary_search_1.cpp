@@ -12,3 +12,5 @@ int Binary Search( int a[], int N,int X)
    while(left<=right);
    return-1; // Tìm hết mà không có x
  }
+cre: bài của nhóm 1
+        
